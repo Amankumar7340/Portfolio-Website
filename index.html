@@ -7,15 +7,21 @@
     <title>Aman Kumar - Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+     <!-- Canvas for background animation -->
+     <canvas id="backgroundCanvas"></canvas>
     <!-- Header Section -->
     <div id="header">
+        
         <div class="container">
+            
+            
             <!-- Navigation Bar -->
             <nav>
-                <img src="images/logo.png" class="logo" alt="Aman Kumar Logo">
+                <img src="images/logo.jpg" class="logo" alt="Aman Kumar Logo">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -25,17 +31,50 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Social Icons Above Header Text -->
-            <div class="social-icons">
-                <a href="mailto:amankumar.987625@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/a-m-a-n/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Amankumar7340" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+            <div class="contact-container">
+                
             <!-- Header Text and Image -->
             <div class="header-content">
                 <div class="header-text">
-                    <p>Web Developer</p>
-                    <h1>Hi, I'm <span class="name-highlight">Aman Kumar</span><br>From India</h1>
+                    
+                      
+            <h1>Hi, I'm <span class="name-highlight"> <br>Aman Kumar</span>
+                 <br>
+                 <div class="typing-container">
+                    <span class="bracket">[</span>
+                    <span class="typing-text"></span>
+                    <span class="bracket">]</span>
+                    </div>
+                    <br>
+                    <!-- Social Icons Above Header Text -->
+                            <section class="mainsocial">
+                                <div class="social">
+                                    <ul>
+                                        <li class="item">
+                                            <a href="mailto:amankumar.987625@gmail.com">
+                                                <i class="fa-solid fa-envelope icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="https://www.linkedin.com/in/a-m-a-n/">
+                                                <i class="fa-brands fa-linkedin icon"></i>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="https://github.com/Amankumar7340">
+                                                <i class="fa-brands fa-github icon"></i>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="item">
+                                            <a href="https://wa.me/+917340938568">
+                                                <i class="fa-brands fa-whatsapp icon"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>        
+            </h1>
                     <!-- Resume Button and Download Icon -->
                     <div class="resume-section">
                         <a href="#" class="resume-button" id="review-resume">
@@ -46,10 +85,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="header-image">
+            <div class="header-image">
                     <img src="images/idname.png" alt="Aman Kumar" class="profile-image">
                 </div>
             </div>
+            
         </div>
     </div>
 
@@ -61,16 +101,20 @@
             <iframe src="images/resume.pdf" width="100%" height="500px"></iframe>
             <a href="images/resume.pdf" target="_blank" class="open-new-tab">Open in New Tab</a>
         </div>
-    </div>
+    </div></div>
 
     <!-- About Section -->
     <div id="about">
+        
         <div class="container">
-            <h2>About Me</h2>
+           
+            <h2>About Me<br></h2>
             <p>
                 I am a passionate web developer with expertise in building responsive and user-friendly websites.
                 I specialize in front-end development using HTML, CSS, JavaScript, and modern frameworks like React.
-                I love turning ideas into reality and creating seamless digital experiences.
+                I love turning ideas into reality and creating seamless digital experiences. As a dedicated computer Engineering student with a strong
+                foundation in app and web development, I am enthusiastic about leveraging my technical skills to excel in a Software Development
+                Engineer role. Eager to contribute to dynamic projects, I aim to apply my expertise in creating immersive experiences and crafting scalable solutions.
             </p>
         </div>
     </div>
@@ -107,7 +151,7 @@
               <div class="project-image">
                   <img src="images/project1.jpg" alt="GYM FITNESS WEBSITE">
                   <div class="project-overlay">
-                      <p>Developed a responsive website using HTML and CSS, featuring sections for services, trainers, membership plans, and contact information.</p>
+                      <p>Developed a responsive website, featuring sections for services, trainers, membership plans, and contact information.</p>
                   </div>
               </div>
               <a href="https://gym-fitness-website.com" target="_blank" class="project-title">GYM FITNESS WEBSITE</a>
@@ -118,7 +162,7 @@
               <div class="project-image">
                   <img src="images/project2.jpg" alt="NEWS AGGREGATOR ANDROID APP">
                   <div class="project-overlay">
-                      <p>Created a feature-rich news aggregator app using Android Studio. Integrated REST APIs for real-time news updates.</p>
+                      <p>Created a feature-rich news aggregator app using Android Studio. Integrated NEWS APIs for real-time news updates.</p>
                   </div>
               </div>
               <a href="https://news-aggregator-app.com" target="_blank" class="project-title">NEWS AGGREGATOR ANDROID APP</a>
@@ -140,7 +184,7 @@
               <div class="project-image">
                   <img src="images/project4.jpg" alt="AGRIBOT – SMART FARMING SYSTEM">
                   <div class="project-overlay">
-                      <p>Research on a smart farming tool to check soil moisture, temperature, humidity, and air pressure using Arduino and sensors.</p>
+                      <p>Smart farming tool to check soil moisture, temperature, humidity, and air pressure using Arduino and sensors.</p>
                   </div>
               </div>
               <a href="https://agribot-smart-farming.com" target="_blank" class="project-title">AGRIBOT – SMART FARMING SYSTEM</a>
@@ -162,7 +206,7 @@
               <div class="project-image">
                   <img src="images/project6.jpg" alt="AUGMENTED REALITY (AR) SHOPPING ASSISTANT">
                   <div class="project-overlay">
-                      <p>An app that lets users visualize furniture, clothing, or accessories in their environment using AR. Integrated with e-commerce APIs for real-time product suggestions.</p>
+                      <p>An AR app for visualizing furniture, clothing, or accessories in your space, integrated with e-commerce APIs</p>
                   </div>
               </div>
               <a href="https://ar-shopping.com" target="_blank" class="project-title">AUGMENTED REALITY (AR) SHOPPING ASSISTANT</a>
@@ -184,7 +228,7 @@
               <div class="project-image">
                   <img src="images/project8.jpg" alt="MEDICAL IMAGE ANALYSIS">
                   <div class="project-overlay">
-                      <p>Built a CNN to detect diseases from medical images (e.g., pneumonia from X-rays or tumors from MRI scans) using datasets like CheXpert and Kaggle RSNA Pneumonia Detection.</p>
+                      <p>Built CNN Project to detect diseases from medical images (e.g., pneumonia from X-rays or tumors from MRI scans)</p>
                   </div>
               </div>
               <a href="https://medical-image-analysis.com" target="_blank" class="project-title">MEDICAL IMAGE ANALYSIS</a>
@@ -195,7 +239,7 @@
               <div class="project-image">
                   <img src="images/project9.jpg" alt="QR-Code Generator">
                   <div class="project-overlay">
-                      <p>Developed a fully functional Qrcode generating website, when any link is pasted to it, using Python, HTML and CSS. Firebase is used to host this Website.</p>
+                      <p>Developed a fully functional Qrcode generating website, when any link is pasted to it, using Python, HTML and CSS.</p>
                   </div>
               </div>
               <a href="https://qr-code-ab29b.web.app/" target="_blank" class="project-title">QR-CODE GENERATOR</a>
@@ -215,60 +259,59 @@
   </div>
 </div>
 
-    <!-- Achievements and Certifications Section -->
-    <div id="achievements-certifications">
-        <div class="container">
-            <h2>Achievements and Certifications</h2>
+<!-- Achievements and Certifications Section -->
+<div id="achievements-certifications">
+    <div class="container">
+        <h2>Achievements and Certifications</h2>
 
-            <!-- Research Papers -->
-            <div class="section">
-                <h3>Research Papers</h3>
-                <ul>
-                    <li>
-                        <a href="https://research-paper-link.com" target="_blank">Leveraging CNNs for Accurate Weather Prediction: A Comparative Analysis of Custom and
-                          Transfer Learning Models</a>
-                        <button class="preview-button" onclick="openPreview('images/Researchpaper1.pdf')">Preview Certificate</button>
-                    </li>
-                    <li>
-                        <a href="https://research-paper-link2.com" target="_blank">Image Processing: Edge Detection Models</a>
-                        <button class="preview-button" onclick="openPreview('images/Researchpaper1.pdf')">Preview Certificate</button>
-                    </li>
-                </ul>
-            </div>
+        <!-- Research Papers -->
+        <div class="section">
+            <h3>Research Papers</h3>
+            <ul>
+                <li>
+                    <span class="title">Leveraging CNNs for Accurate Weather Prediction: A Comparative Analysis of Custom and Transfer Learning Models</span>
+                    <button class="preview-button" onclick="openPreview('images/Researchpaper1.pdf')">Preview Certificate</button>
+                </li>
+                <li>
+                    <span class="title">Image Processing: Edge Detection Models</span>
+                    <button class="preview-button" onclick="openPreview('images/Researchpaper1.pdf')">Preview Certificate</button>
+                </li>
+            </ul>
+        </div>
 
-            <!-- Certifications -->
-            <div class="section">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>
-                        Developing AI Application with Python and Flask – IBM
-                        <button class="preview-button" onclick="openPreview('ai.pdf')">Preview Certificate</button>
-                    </li>
-                    <li>
-                        AWS – COURSERA
-                        <button class="preview-button" onclick="openPreview('images/aws.pdf')">Preview Certificate</button>
-                    </li>
-                    <li>
-                        Introduction to IoT – NPTEL
-                        <button class="preview-button" onclick="openPreview('images/iot.pdf')">Preview Certificate</button>
-                    </li>
-                    <li>
-                        Cloud Computing – DUKE
-                        <button class="preview-button" onclick="openPreview('images/cc.pdf')">Preview Certificate</button>
-                    </li>
-                </ul>
-            </div>
+        <!-- Certifications -->
+        <div class="section">
+            <h3>Certifications</h3>
+            <ul>
+                <li>
+                    <span class="title">Developing AI Application with Python and Flask - IBM</span>
+                    <button class="preview-button" onclick="openPreview('ai.pdf')">Preview Certificate</button>
+                </li>
+                <li>
+                    <span class="title">AWS – COURSERA</span>
+                    <button class="preview-button" onclick="openPreview('images/aws.pdf')">Preview Certificate</button>
+                </li>
+                <li>
+                    <span class="title">Introduction to IoT – NPTEL</span>
+                    <button class="preview-button" onclick="openPreview('images/iot.pdf')">Preview Certificate</button>
+                </li>
+                <li>
+                    <span class="title">Cloud Computing – DUKE</span>
+                    <button class="preview-button" onclick="openPreview('images/cc.pdf')">Preview Certificate</button>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <!-- Preview Popup -->
-    <div id="preview-popup" class="popup">
-        <div class="popup-content">
-            <span class="close-popup" onclick="closePreview()">&times;</span>
-            <h2>Certificate Preview</h2>
-            <iframe id="preview-iframe" src="" width="100%" height="500px"></iframe>
-        </div>
+<!-- Preview Popup -->
+<div id="preview-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePreview()">&times;</span>
+        <h2>Certificate Preview</h2>
+        <iframe id="preview-iframe" src="" width="100%" height="500px"></iframe>
     </div>
+</div>
 
     <!-- Contact Section -->
     <div id="contact">
@@ -442,6 +485,145 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
     </script>
+    <script>
+        const words = ["Web Developer", "Android Developer", "Backend Developer", "Data Engineer"];
+        const textElement = document.querySelector(".typing-text");
+        const brackets = document.querySelectorAll(".bracket");
+
+        let wordIndex = 0;
+        let letterIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+
+            if (!isDeleting) {
+                textElement.textContent = currentWord.substring(0, letterIndex + 1);
+                letterIndex++;
+
+                if (letterIndex === currentWord.length) {
+                    setTimeout(() => {
+                        brackets.forEach(bracket => bracket.classList.add("blink"));
+                        setTimeout(() => {
+                            brackets.forEach(bracket => bracket.classList.remove("blink"));
+                            isDeleting = true;
+                            typeEffect(); 
+                        }, 1500);
+                    }, 500);
+                    return;
+                }
+            } else {
+                textElement.textContent = currentWord.substring(0, letterIndex - 1);
+                letterIndex--;
+
+                if (letterIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+            }
+
+            setTimeout(typeEffect, isDeleting ? 100 : 150);
+        }
+
+        typeEffect();
+    </script>
+    <!-- background Animation -->
+    <script>
+        const canvas = document.getElementById("backgroundCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let nodes = [];
+        const nodeCount = 50; // Number of nodes
+        const maxDistance = 150; // Max distance for connecting lines
+        const mouse = { x: null, y: null };
+
+        // Initialize nodes with random positions & velocities
+        for (let i = 0; i < nodeCount; i++) {
+            nodes.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 1.5,
+                vy: (Math.random() - 0.5) * 1.5,
+                size: Math.random() * 4 + 1,
+            });
+        }
+
+        // Mouse interaction: Make nodes repel
+        canvas.addEventListener("mousemove", (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        // Update nodes positions
+        function updateNodes() {
+            for (let node of nodes) {
+                node.x += node.vx;
+                node.y += node.vy;
+
+                // Bounce off the walls
+                if (node.x <= 0 || node.x >= canvas.width) node.vx *= -1;
+                if (node.y <= 0 || node.y >= canvas.height) node.vy *= -1;
+
+                // Mouse interaction: Repel nodes
+                let dx = node.x - mouse.x;
+                let dy = node.y - mouse.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < 100) {
+                    node.x += dx * 0.05;
+                    node.y += dy * 0.05;
+                }
+            }
+        }
+
+        // Draw nodes & connecting lines
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let node of nodes) {
+                // Draw node
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, node.size, 0, Math.PI * 2);
+                ctx.fillStyle = "#ffffff";
+                ctx.fill();
+
+                // Draw lines to nearby nodes
+                for (let otherNode of nodes) {
+                    let dx = node.x - otherNode.x;
+                    let dy = node.y - otherNode.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < maxDistance) {
+                        ctx.beginPath();
+                        ctx.moveTo(node.x, node.y);
+                        ctx.lineTo(otherNode.x, otherNode.y);
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / maxDistance})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Animation loop
+        function animate() {
+            updateNodes();
+            draw();
+            requestAnimationFrame(animate);
+        }
+
+        // Resize canvas when window resizes
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Start animation
+        animate();
+    </script>
+
 </body>
 </html>
 
