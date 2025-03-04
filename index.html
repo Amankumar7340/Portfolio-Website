@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body oncontextmenu="return false;">
      <!-- Canvas for background animation -->
      <canvas id="backgroundCanvas"></canvas>
     <!-- Header Section -->
@@ -285,7 +285,7 @@
             <ul>
                 <li>
                     <span class="title">Developing AI Application with Python and Flask - IBM</span>
-                    <button class="preview-button" onclick="openPreview('ai.pdf')">Preview Certificate</button>
+                    <button class="preview-button" onclick="openPreview('images/ai.pdf')">Preview Certificate</button>
                 </li>
                 <li>
                     <span class="title">AWS – COURSERA</span>
@@ -484,6 +484,35 @@
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
+    </script>
+    
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Right-click is disabled on this page.');
+        });
+
+        // Disable keyboard shortcuts (e.g., F12, Ctrl+Shift+I, Ctrl+U)
+        document.addEventListener('keydown', function (e) {
+            // Disable F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert('F12 is disabled.');
+            }
+
+            // Disable Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+                e.preventDefault();
+                alert('Ctrl+Shift+I is disabled.');
+            }
+
+            // Disable Ctrl+U
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                alert('Ctrl+U is disabled.');
+            }
+        });
     </script>
     <script>
         const words = ["Web Developer", "Android Developer", "Backend Developer", "Data Engineer"];
