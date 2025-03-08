@@ -38,7 +38,7 @@
                 <div class="header-text">
                     
                       
-            <h1>Hi, I'm <span class="name-highlight"> <br>Aman Kumar</span>
+            <h1 class="variable-proximity">Hi, I'm <span class="name-highlight"> <br>Aman Kumar</span>
                  <br>
                  <div class="typing-container">
                     <span class="bracket">[</span>
@@ -118,6 +118,10 @@
             </p>
         </div>
     </div>
+    <!-- Up Button -->
+<button id="up-button" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
     <!-- Skills Section -->
     <div id="skills">
@@ -651,6 +655,24 @@
 
         // Start animation
         animate();
+    </script>
+    <script>// Show/hide up button based on scroll position
+        window.onscroll = function() {
+            const upButton = document.getElementById("up-button");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                upButton.style.display = "block"; // Show button
+            } else {
+                upButton.style.display = "none"; // Hide button
+            }
+        };
+        
+        // Scroll to top when up button is clicked
+        document.getElementById("up-button").addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Smooth scroll
+            });
+        });
     </script>
 
 </body>
