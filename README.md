@@ -1,6 +1,6 @@
 # Aman Kumar - Personal Portfolio
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, achievements, and certifications. It is built using **HTML**, **CSS**, and **JavaScript**, and hosted on **Firebase**.
+Welcome to my personal portfolio website! This project showcases my skills, projects, achievements, and certifications. It is built using **HTML**, **CSS**, **JavaScript**, **React-js**and hosted on **Firebase**.
 
 ---
 
