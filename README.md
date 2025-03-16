@@ -16,7 +16,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-Check out the live website: (https://aman-kumar-portfolio-ak.web.app/)
+Check out the live website: (https://amankumar-pi.vercel.app/)
 
 ---
 
