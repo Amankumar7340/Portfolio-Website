@@ -364,11 +364,25 @@ nav ul li a:hover {
     transform: scale(1.1);
     text-align: center;
     margin-left: -140px;
+    --s: 400px;   /* the size of the image */
+      --b: 7px;     /* the border thickness */
+      --g: 14px;    /* the gap */
+      --c: #4ECDC4; /* the color */
+
+      
+      aspect-ratio: 1;
+      outline: calc(var(--s) / 2) solid #0009;
+      outline-offset: calc(var(--s) / -2);
+      cursor: pointer;
+      transition: 0.3s;
 }
 
 .profile-image:hover {
     transform: scale(1.1) rotateY(180deg);
     box-shadow: 0 0 50px rgba(255, 0, 79, 0.7);
+    outline: var(--b) solid var(--c);
+      outline-offset: var(--g);
+    
     
 }
 
