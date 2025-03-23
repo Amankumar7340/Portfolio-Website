@@ -7,7 +7,43 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 5%; /* Reduce padding for smaller screens */
+        height: 60px; /* Reduce height */
+    }
 
+    .logo {
+        width: 80px; /* Reduce logo size */
+    }
+
+    nav ul {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+        cursor: pointer;
+        font-size: 24px;
+        color: #080808;
+    }
+}
 
 body {
     background-color: #080808;
